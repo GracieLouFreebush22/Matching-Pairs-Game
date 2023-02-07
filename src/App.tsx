@@ -1,7 +1,12 @@
+import { Board } from "./components/Board";
 import { greet } from "./utils/greet";
 
 function App(): JSX.Element {
-  return <h1>{greet("World")}</h1>;
+  return (
+  <>
+  <Board/>
+  </>
+  )
 }
 
 export default App;
