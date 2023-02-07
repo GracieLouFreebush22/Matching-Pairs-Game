@@ -3,10 +3,10 @@ import { greet } from "./utils/greet";
 
 function App(): JSX.Element {
   return (
-  <>
-  <Board/>
-  </>
-  )
+    <>
+      <Board />
+    </>
+  );
 }
 
 export default App;

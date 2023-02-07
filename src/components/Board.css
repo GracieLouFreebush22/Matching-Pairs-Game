@@ -1,4 +1,19 @@
-.game-board{
-    display: grid;
-    grid-column: 3 /1 ;
+.ctn-game-board {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+.ctn-board-item {
+  background-color: aquamarine;
+  border-radius: 2cm;
+  font-size: xx-large;
+  margin: 10px;
+  padding: 75px;
+  text-align: center;
+  position: relative;
+}
+
+.ctn-board-item:hover {
+  background-color: aqua;
 }
