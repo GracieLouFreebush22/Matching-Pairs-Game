@@ -25,10 +25,4 @@ export interface CardI {
   emoji: Emoji;
 }
 
-export interface GameStateI {
-    cards: [] //16 cards
-    turnCount: number;
-    turnPhase: "none-clicked" | "one-clicked" | "two-clicked";
-    clickedCards: [] //zero, one, or two cards
-}
 
