@@ -1,5 +1,5 @@
 export function makeCards(): CardI[] {
-  const emojis = ["💗", "👾", "😈", "🤡", "😘 ", "👹"];
+  const emojis = ["💗", "👾", "😈", "🤡", "👹", "💋", "🌺", "🐼"];
   const emojisBoard: string[] = [...emojis, ...emojis];
 
   return emojisBoard
@@ -11,14 +11,24 @@ function cardify(emoji: string, index: number): CardI {
   return {
     id: index + 1,
     emoji: emoji,
-    life: "faceDown",
+    life: Math.random() > 0.5 ? "faceDown": "faceUp"
   };
 }
 
 makeCards();
 
+export type Emoji= string;
+
 export interface CardI {
   id: number;
   life: "faceUp" | "faceDown" | "removed";
-  emoji: string;
+  emoji: Emoji;
 }
+
+export interface GameStateI {
+    cards: [] //16 cards
+    turnCount: number;
+    turnPhase: "none-clicked" | "one-clicked" | "two-clicked";
+    clickedCards: [] //zero, one, or two cards
+}
+

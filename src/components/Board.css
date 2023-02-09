@@ -1,19 +1,36 @@
+/* body{
+    background-color: black;
+} */
+.title{
+    color:pink;
+    text-align: center;
+    border: 10px solid rgb(238, 5, 199);
+}
 .ctn-game-board {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
+
 }
 
-.ctn-board-item {
-  background-color: aquamarine;
-  border-radius: 2cm;
-  font-size: xx-large;
-  margin: 10px;
-  padding: 75px;
-  text-align: center;
-  position: relative;
+.card {
+  background-color: rgb(238, 5, 199);
+  border: 10px solid red;
+  border-radius: 10%;
+  /* font-size: 6rem;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  place-items:center;
+  aspect-ratio: 1; */
 }
 
-.ctn-board-item:hover {
-  background-color: aqua;
+.card:hover {
+  background-color: pink;
+  cursor:grab;
+}
+
+.faceDown{
+    background-color: purple;
+    opacity: 0.9;
 }
